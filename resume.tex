@@ -1,0 +1,149 @@
+\documentclass[letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage[top=.4in,right=.5in,bottom=.4in,left=.5in]{geometry}
+
+%% Slightly decrease section header size.
+\usepackage{sectsty}
+\sectionfont{\Large}
+\subsectionfont{\large}
+
+%% Slightly increase section header spacing.
+\usepackage{titlesec}
+%%                     {indentation}{above}{below}
+\titlespacing{\section}{0pt}        {*3}   {*1}
+
+%% Set up a custom itemize format for entry details
+\newcommand{\detail}{\indent\textbullet ~ }
+
+%% Set normal font size; Set no page numbers; Set non-flush page ending
+\normalsize
+\pagestyle{empty}
+
+\begin{document}
+
+  %% Do not display section numbering
+  \setcounter{secnumdepth}{0}
+
+  %% Full name
+  {
+    \huge
+    \noindent
+    \textbf{Jean Michel Rouly}
+  }
+
+  %% Citizenship information
+  \noindent\textbf{United States Citizen} \\
+
+  %% Contact details
+  \noindent\begin{tabularx}{\textwidth}{@{}l l X l l@{}}
+    \textbf{phone:}  & 571 218 7173                                  & & \textbf{address:} &  PMB \#4843 \\
+    \textbf{email:}  & \href{mailto:jrouly@gmu.edu}{jrouly@gmu.edu}  & &                   &  4450 Rivanna River Way \\
+    \textbf{web:}    & \href{michel.rouly.net}{michel.rouly.net}     & &                   &  Fairfax, VA 22030-4441
+  \end{tabularx}
+
+  %% Education
+  \section{Education}
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{George Mason University,} Fairfax, VA & \textbf{Aug 2011 - May 2015} \\
+    \emph{B.S., Computer Science with Linguistics and Data Analysis minors} & \emph{Cumulative GPA: 3.93} \\[0.2cm]
+  \end{tabularx}
+
+  \detail Dean's List awarded for all semesters attended,\\
+  \detail Member of Phi Kappa Phi academic honors society,\\
+  \detail Recipient of the Honors College Extraordinary Service award,\\
+  \detail Recipient of highest academic merit scholarship awarded (University Scholars scholarship).
+
+
+  %% Research
+  \section{Relevant Research Experience}
+
+  %% AMALTHEA REU
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{NSF \& Florida Institute of Technology,} Melbourne, FL & \textbf{May 2013 - July 2013} \\
+    \emph{Undergraduate Researcher} & \texttt{\href{amalthea-reu.org}{amalthea-reu.org}}
+  \end{tabularx}
+
+  \noindent\begin{center}``Large-Scale Clustering for Big Data Analytics: A MapReduce Implementation of Hierarchical Affinity Propagation''\end{center}
+
+  \detail 10-week research experience funded by the National Science Foundation,\\
+  \detail Constructed robust data mining framework in a cloud-computing environment,\\
+  \detail Novel MapReduce implementation allowed scalability to Big Data problems,\\
+  \detail Built using Apache Hadoop, Mahout, and Hive; deployed at scale on Amazon EC2 cloud.
+
+
+  %% Experience
+  \section{Relevant Work Experience}
+
+  %% GMU RTOC
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{George Mason University Honors College,} Fairfax, VA & \textbf{Aug 2013 - Present} \\
+    \emph{Lead Project Developer} & \texttt{\href{http://honorscollege.gmu.edu/collegeresearch}{honorscollege.gmu.edu}} \\[0.2cm]
+  \end{tabularx}
+
+  \detail Developed crowd-sourced peer-review service for students pursuing research topics,\\
+  \detail Maintained multiple Linux web servers hosting online content for student access,\\
+  \detail Collaborated with research mentors to increase usability and value of services.\\
+
+  %% Harmonia
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Harmonia Holdings Group, LLC,} Tysons Corner, VA & \textbf{June 2012 - Present} \\
+    \emph{Java Programming Consultant} & \texttt{\href{harmonia.com}{harmonia.com}} \\[0.2cm]
+  \end{tabularx}
+
+  \detail Developed components of a Learning Classifier engine,\\
+  \detail Collaborated with project manager on high level systems architecture design,\\
+  \detail Spearheaded design and implementation for complex graphical user interfaces, all to-specification.
+
+%  %% TIC
+%  \noindent
+%  \begin{tabularx}{\textwidth}{@{}X r@{}}
+%    \textbf{TIC Summer Camp,} McLean, VA & \textbf{June 2011 - August 2011} \\
+%    \emph{Programming Counselor} & \emph{Java, LOGO, Instruction} \\[0.2cm]
+%  \end{tabularx}
+%
+%  \detail Worked closely and autonomously with small groups of students,\\
+%  \detail Instructed students in introductory game design using LOGO,\\
+%  \detail Introduced students to programming in Java,\\
+%  \detail Compiled formal quarterly reports on student progress and behavior.
+
+
+  %% Experience
+  \section{Community Involvement}
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Student-Run Computing and Technology (SRCT),} Fairfax, VA & \textbf{August 2013 - Present} \\
+    \emph{President and Co-Founder} & \texttt{\href{srct.gmu.edu}{srct.gmu.edu}} \\[0.2cm]
+  \end{tabularx}
+
+  \detail Developed and deployed Open Source projects to benefit the campus community,\\
+  \detail Organized groups of student developers and their Open Source projects,\\
+  \detail Maintained multiple Linux web servers hosting software services,\\
+
+
+  %% Skills
+  \section{Relevant Skills}
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X X@{}}
+    \textbf{Languages}                                    &  \textbf{Common Applications and Frameworks} \\
+    Java, C, Python, SQL, R, PHP, (X)HTML, CSS          &  Apache Hadoop and Mahout, Django, MATLAB, SVN, Git, Eclipse, NetBeans, \LaTeX \\[0.2cm]
+    \textbf{Operating Systems}                            &  \textbf{Software Design Paradigms} \\
+    Linux/UNIX; Windows 7, XP, 2000                       &  MapReduce, Use Case analysis, UML, technical writing
+  \end{tabularx}
+
+
+  %% References
+%  \section{References}
+%  \noindent Available on request.
+
+\end{document}

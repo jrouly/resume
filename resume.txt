@@ -1,0 +1,76 @@
+Jean Michel Rouly
+United States Citizen
+
+phone:   571 218 7173
+email:   jrouly@gmu.edu
+web:     michel.rouly.net
+address: PMB #4843
+         4450 Rivanna River Way
+         Fairfax, VA 22030-4441
+
+
+Education
+=========
+
+B.S., Computer Science with Linguistics minor 
+• George Mason University, Fairfax, VA
+• Aug 2011 - May 2015
+• Cumulative GPA: 3.93
+• Dean’s List awarded for all semesters attended,
+• Member of Phi Kappa Phi academic honors society,
+• Recipient of highest academic merit scholarship awarded (University Scholars scholarship).
+
+
+Relevant Experience
+===================
+
+George Mason University Honors College, Fairfax, VA
+RTOC Production Team Member
+Aug 2013 - Present
+honorscollege.gmu.edu
+• Developed crowd-sourced peer-review service for students pursuing research topics,
+• Maintained multiple Linux web servers hosting online content for student access,
+• Collaborated with research mentors to increase usability and value of services.
+
+NSF & Florida Institute of Technology, Melbourne, FL
+Undergraduate Researcher
+May 2013 - July 2013
+amalthea-reu.org
+“Large-Scale Clustering for Big Data Analytics: A MapReduce Implementation of Hierarchical Affinity Propagation”
+• 10-week research experience funded by the National Science Foundation,
+• Constructed robust data mining framework in a cloud-computing environment,
+• Novel MapReduce implementation allowed scalability to Big Data problems,
+• Built using Apache Hadoop, Mahout, and Hive; deployed at scale on Amazon EC2 cloud.
+
+Harmonia Holdings Group, LLC, Tysons Corner, VA
+Java Programming Consultant
+June 2012 - Present
+harmonia.com
+• Developed components of a Learning Classifier engine,
+• Collaborated with project manager on high level systems architecture design,
+• Spearheaded design and implementation for complex graphical user interfaces, all to-specification.
+
+
+Community Involvement
+=====================
+
+Student-Run Computing and Technology (SRCT), Fairfax, VA
+President and Co-Founder
+August 2013 - Present
+srct.gmu.edu
+• Developed and deployed Open Source projects to benefit the campus community,
+• Organized groups of student developers and their Open Source projects,
+• Maintained multiple Linux web servers hosting software services,
+• Liaised with campus administration and faculty.
+
+
+Relevant Skills
+===============
+
+Languages: Java, C, Python, MySQL, R, PHP, (X)HTML, CSS
+
+Common Applications and Frameworks: Apache Hadoop and Mahout, Django, MATLAB, SVN, Git, Eclipse, NetBeans, LaTex
+
+Operating Systems: Linux/UNIX; Windows 7, XP, 2000
+
+Software Design Paradigms: MapReduce, Use Case analysis, UML, technical writing
