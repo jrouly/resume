@@ -4,3 +4,7 @@
 *.aux
 *.pdf
 *.dvi
+*.make
+*.d
+*.fls
+*.temp
