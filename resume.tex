@@ -6,6 +6,7 @@
 %\usepackage[english]{babel}  % This document is in English.
 \usepackage{tabularx}        % Use tables with spacing.
 \usepackage{hyperref}        % Embed hyperlinks.
+\usepackage{multicol}        % Produce multiple columns.
 
 %% Set custom page margins.
 \usepackage[top=.4in,right=.5in,bottom=.4in,left=.5in]{geometry}
@@ -18,7 +19,7 @@
 %% Slightly increase section header spacing.
 \usepackage{titlesec}
 %                      {indentation}{above}{below}
-\titlespacing{\section}{0pt}        {*3}   {*1}
+\titlespacing{\section}{0pt}        {*2}   {*0.5}
 
 %% Decrease spacing between list items.
 \usepackage{enumitem}
@@ -39,22 +40,21 @@
   %% Do not display section numbering
   \setcounter{secnumdepth}{0}
 
-  %% Full name
-  {
-    \huge
-    \noindent
-    \textbf{Jean Michel Rouly}
-  }
+  %% Name and citizenship information
+  \begin{multicols}{2}
+    \huge\noindent\textbf{Jean Michel Rouly}\\
+    \normalsize\noindent\textbf{United States Citizen}
 
-  %% Citizenship information
-  \noindent\textbf{United States Citizen} \\
+    \columnbreak
 
-  %% Contact details
-  \noindent\begin{tabularx}{\textwidth}{@{}l l X l l@{}}
-    \textbf{phone:}  & 571 218 7173                                  & & \textbf{address:} &  PMB \#4843 \\
-    \textbf{email:}  & \href{mailto:jrouly@gmu.edu}{jrouly@gmu.edu}  & &                   &  4450 Rivanna River Way \\
-    \textbf{web:}    & \href{michel.rouly.net}{michel.rouly.net}     & &                   &  Fairfax, VA 22030-4441
-  \end{tabularx}
+    \raggedleft
+    \begin{tabular}{rr}
+    \textbf{phone:}  &  571 218 7173\\
+    \textbf{email:}  &  \href{mailto:jrouly@gmu.edu}{jrouly@gmu.edu}\\
+    \textbf{web:}    &  \href{michel.rouly.net}{michel.rouly.net}
+    \end{tabular}
+  \end{multicols}
+
 
   %% Education
   \section{Education}
@@ -62,7 +62,7 @@
   \noindent
   \begin{tabularx}{\textwidth}{@{}X r@{}}
     \textbf{George Mason University,} Fairfax, VA & \textbf{Aug 2011 - May 2015} \\
-    \emph{B.S., Computer Science with Linguistics and Data Analysis minors} & \emph{Cumulative GPA: 3.93}
+    \emph{B.S., Computer Science with Linguistics & \emph{Cumulative GPA: 3.93}
   \end{tabularx}
 
   \begin{details}
