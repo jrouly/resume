@@ -1,12 +1,13 @@
 \documentclass[letterpaper]{article}
 
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{tabularx}
-\usepackage{lipsum}
-\usepackage{hyperref}
-\usepackage[english]{babel}
+%\usepackage[T1]{fontenc}     % Correct font rendering.
+%\usepackage[utf8]{inputenc}  % Correct font rendering.
+%\usepackage{lmodern}         % Use fancy font.
+%\usepackage[english]{babel}  % This document is in English.
+\usepackage{tabularx}        % Use tables with spacing.
+\usepackage{hyperref}        % Embed hyperlinks.
+
+%% Set custom page margins.
 \usepackage[top=.4in,right=.5in,bottom=.4in,left=.5in]{geometry}
 
 %% Slightly decrease section header size.
@@ -16,15 +17,22 @@
 
 %% Slightly increase section header spacing.
 \usepackage{titlesec}
-%%                     {indentation}{above}{below}
+%                      {indentation}{above}{below}
 \titlespacing{\section}{0pt}        {*3}   {*1}
 
-%% Set up a custom itemize format for entry details
-\newcommand{\detail}{\indent\textbullet ~ }
+%% Decrease spacing between list items.
+\usepackage{enumitem}
+\setlist{nolistsep}
 
 %% Set normal font size; Set no page numbers; Set non-flush page ending
 \normalsize
 \pagestyle{empty}
+
+%% Set up a custom itemize format for entry details
+\newenvironment{details}
+{\begin{itemize}}
+{\end{itemize}}
+
 
 \begin{document}
 
@@ -56,14 +64,32 @@
     \emph{B.S., Computer Science with Linguistics and Data Analysis minors} & \emph{Cumulative GPA: 3.93} \\[0.2cm]
   \end{tabularx}
 
-  \detail Dean's List awarded for all semesters attended,\\
-  \detail Member of Phi Kappa Phi academic honors society,\\
-  \detail Recipient of the Honors College Extraordinary Service award,\\
-  \detail Recipient of highest academic merit scholarship awarded (University Scholars scholarship).
+  \begin{details}
+  \item Dean's List awarded for all semesters attended.
+  \item Member of Phi Kappa Phi academic honors society.
+  \item Recipient of Honors College Extraordinary Service award.
+  \item Recipient of highest academic merit scholarship (University Scholars scholarship).
+  \end{details}
 
 
   %% Research
   \section{Relevant Research Experience}
+
+  %% UA-ESE-REU
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{NSF \& University of Alabama,} Tuscaloosa, AL & \textbf{May 2014 - July 2014} \\
+    \emph{Undergraduate Researcher} & \texttt{\href{reu.cs.ua.edu}{reu.cs.ua.edu}} \\[0.2cm]
+  \end{tabularx}
+
+  %\noindent\begin{center}``Modeling IDE Generators'' (working title)\end{center}
+
+  \begin{details}
+  \item 9-week research experience funded by the National Science Foundation.
+  \item Analyzed various graphical language IDEs for common attributes.
+  \item Contributed to open source AToMPM modeling framework.
+  \item Manipulated wide variety of tools from various domains.
+  \end{details}~\\[0.1em]
 
   %% AMALTHEA REU
   \noindent
@@ -74,10 +100,12 @@
 
   \noindent\begin{center}``Large-Scale Clustering for Big Data Analytics: A MapReduce Implementation of Hierarchical Affinity Propagation''\end{center}
 
-  \detail 10-week research experience funded by the National Science Foundation,\\
-  \detail Constructed robust data mining framework in a cloud-computing environment,\\
-  \detail Novel MapReduce implementation allowed scalability to Big Data problems,\\
-  \detail Built using Apache Hadoop, Mahout, and Hive; deployed at scale on Amazon EC2 cloud.
+  \begin{details}
+  \item 10-week research experience funded by the National Science Foundation.
+  \item Constructed robust data mining framework in a cloud-computing environment.
+  \item Novel MapReduce implementation allowed scalability to Big Data problems.
+  \item Built using Apache Hadoop, Mahout, and Hive; deployed at scale on Amazon EC2 cloud.
+  \end{details}
 
 
   %% Experience
@@ -90,9 +118,11 @@
     \emph{Lead Project Developer} & \texttt{\href{http://honorscollege.gmu.edu/collegeresearch}{honorscollege.gmu.edu}} \\[0.2cm]
   \end{tabularx}
 
-  \detail Developed crowd-sourced peer-review service for students pursuing research topics,\\
-  \detail Maintained multiple Linux web servers hosting online content for student access,\\
-  \detail Collaborated with research mentors to increase usability and value of services.\\
+  \begin{details}
+  \item Developed crowd-sourced peer-review service for students pursuing research topics.
+  \item Maintained multiple Linux web servers hosting online content for student access.
+  \item Collaborated with research mentors to increase usability and value of services.
+  \end{details}~\\[0.1em]
 
   %% Harmonia
   \noindent
@@ -101,9 +131,11 @@
     \emph{Java Programming Consultant} & \texttt{\href{harmonia.com}{harmonia.com}} \\[0.2cm]
   \end{tabularx}
 
-  \detail Developed components of a Learning Classifier engine,\\
-  \detail Collaborated with project manager on high level systems architecture design,\\
-  \detail Spearheaded design and implementation for complex graphical user interfaces, all to-specification.
+  \begin{details}
+  \item Developed components of a Learning Classifier engine.
+  \item Collaborated with project manager on high level systems architecture design.
+  \item Spearheaded design and implementation for complex graphical user interfaces, all to-specification.
+  \end{details}
 
 %  %% TIC
 %  \noindent
@@ -126,9 +158,11 @@
     \emph{President and Co-Founder} & \texttt{\href{srct.gmu.edu}{srct.gmu.edu}} \\[0.2cm]
   \end{tabularx}
 
-  \detail Developed and deployed Open Source projects to benefit the campus community,\\
-  \detail Organized groups of student developers and their Open Source projects,\\
-  \detail Maintained multiple Linux web servers hosting software services.\\
+  \begin{details}
+  \item Developed and deployed Open Source projects to benefit the campus community.
+  \item Organized groups of student developers and their Open Source projects.
+  \item Maintained multiple Linux web servers hosting software services.
+  \end{details}
 
 
   %% Skills
