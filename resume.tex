@@ -1,5 +1,6 @@
 \documentclass[letterpaper]{article}
 
+\usepackage{xltxtra}          % Use for unicode font support.
 %\usepackage[T1]{fontenc}      % Correct font rendering.
 %\usepackage[utf8]{inputenc}   % Correct font rendering.
 %\usepackage{lmodern}          % Use fancy font.
@@ -7,7 +8,7 @@
 \usepackage{tabularx}         % Use tables with spacing.
 \usepackage{hyperref}         % Embed hyperlinks.
 \usepackage{multicol}         % Produce multiple columns.
-\setlength{\multicolsep}{0px} % Don't add spacing after contact info.
+\setlength{\multicolsep}{0pt} % Don't add spacing after contact info.
 
 %% Set custom page margins.
 \usepackage[top=.4in,right=.5in,bottom=.4in,left=.5in]{geometry}
@@ -50,9 +51,9 @@
 
     \raggedleft
     \begin{tabular}{@{}rr@{}}
-    \textbf{phone:}  &  571 218 7173\\
-    \textbf{email:}  &  \href{mailto:jrouly@gmu.edu}{jrouly@gmu.edu}\\
-    \textbf{web:}    &  \href{michel.rouly.net}{michel.rouly.net}
+    {\fontspec{FontAwesome}} &  571 218 7173\\
+    {\fontspec{FontAwesome}} &  \href{mailto:jrouly@gmu.edu}{jrouly@gmu.edu}\\
+    {\fontspec{FontAwesome}} &  \href{michel.rouly.net}{michel.rouly.net}
     \end{tabular}
   \end{multicols}
 
