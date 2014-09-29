@@ -8,10 +8,11 @@
 \usepackage{tabularx}         % Use tables with spacing.
 \usepackage{hyperref}         % Embed hyperlinks.
 \usepackage{multicol}         % Produce multiple columns.
+\usepackage{fancyhdr}         % Fancify your header
 \setlength{\multicolsep}{0pt} % Don't add spacing after contact info.
 
 %% Set custom page margins.
-\usepackage[top=.4in,right=.5in,bottom=.4in,left=.5in]{geometry}
+\usepackage[top=0.9in,right=.5in,bottom=.4in,left=.5in]{geometry}
 
 %% Slightly decrease section header size.
 \usepackage{sectsty}
@@ -29,7 +30,27 @@
 
 %% Set normal font size; Set no page numbers; Set non-flush page ending
 \normalsize
-\pagestyle{empty}
+\pagestyle{fancy}
+
+% Fancy headers
+\setlength{\headheight}{18pt}
+\renewcommand{\headrulewidth}{0.1pt}
+\fancyhf{}
+
+% Name
+\lhead{\Large\textbf{Jean Michel Rouly}}
+
+% Contact information
+\rhead{
+  \begin{tabularx}{12.5cm}{@{}rrrr@{}}
+  {\fontspec{FontAwesome}} 571 218 7173 &
+  {\fontspec{FontAwesome}} \href{mailto:jrouly@gmu.edu}{jrouly@gmu.edu} &
+  {\fontspec{FontAwesome}} \href{michel.rouly.net}{michel.rouly.net} &
+  {\fontspec{FontAwesome}} \href{http://github.com/jrouly}{github.com/jrouly}
+  \end{tabularx}
+}
+
+\setlength{\headsep}{0.3cm}
 
 %% Set up a custom itemize format for entry details
 \newenvironment{details}
@@ -41,22 +62,6 @@
 
   %% Do not display section numbering
   \setcounter{secnumdepth}{0}
-
-  %% Name and citizenship information
-  \begin{multicols}{2}
-    \noindent\LARGE\textbf{Jean Michel Rouly}\\
-    \noindent\normalsize\textbf{United States Citizen}
-
-    \columnbreak
-
-    \raggedleft
-    \begin{tabular}{@{}rr@{}}
-    {\fontspec{FontAwesome}} &  571 218 7173\\
-    {\fontspec{FontAwesome}} &  \href{mailto:jrouly@gmu.edu}{jrouly@gmu.edu}\\
-    {\fontspec{FontAwesome}} &  \href{michel.rouly.net}{michel.rouly.net}
-    \end{tabular}
-  \end{multicols}
-
 
   %% Education
   \section{Education}
