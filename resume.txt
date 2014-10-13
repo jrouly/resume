@@ -4,6 +4,7 @@ United States Citizen
 phone:   571 218 7173
 email:   jrouly@gmu.edu
 web:     michel.rouly.net
+github:  github.com/jrouly
 address: PMB #4843
          4450 Rivanna River Way
          Fairfax, VA 22030-4441
@@ -12,16 +13,39 @@ address: PMB #4843
 Education
 =========
 
-B.S., Computer Science with Linguistics minor
+B.S., Computer Science
 • George Mason University, Fairfax, VA
 • Aug 2011 - May 2015
 • Cumulative GPA: 3.93
-• Dean’s List awarded for all semesters attended,
-• Member of Phi Kappa Phi academic honors society,
-• Recipient of highest academic merit scholarship awarded (University Scholars scholarship).
+• Dean's List all semesters attended,
+• Phi Kappa Phi academic honors society member,
+• University Scholars scholarship recipient (highest academic merit scholarship).
 
 
-Relevant Experience
+Research Experience
+===================
+
+NSF & University of Alabama, Tuscaloosa, AL
+Undergraduate Researcher
+May 2014 - July 2014
+reu.cs.ua.edu
+"Usability and Suitability Survey of Features in Visual IDEs for Non-Programmers"
+• Analyzed graphical language IDEs for common attributes.
+• Contributed to Open Source modeling framework AToMPM.
+
+
+NSF & Florida Institute of Technology, Melbourne, FL
+Undergraduate Researcher
+May 2013 - July 2013
+amalthea-reu.org
+"Large-Scale Clustering for Big Data Analytics: A MapReduce Implementation of Hierarchical Affinity Propagation"
+• 10-week research experience funded by the National Science Foundation,
+• Constructed robust data mining framework in a cloud-computing environment,
+• Novel MapReduce implementation allowed scalability to Big Data problems,
+• Built using Apache Hadoop, Mahout, and Hive; deployed at scale on Amazon EC2 cloud.
+
+
+Work Experience
 ===================
 
 George Mason University Honors College, Fairfax, VA
@@ -31,16 +55,6 @@ honorscollege.gmu.edu
 • Developed crowd-sourced peer-review service for students pursuing research topics,
 • Maintained multiple Linux web servers hosting online content for student access,
 • Collaborated with research mentors to increase usability and value of services.
-
-NSF & Florida Institute of Technology, Melbourne, FL
-Undergraduate Researcher
-May 2013 - July 2013
-amalthea-reu.org
-“Large-Scale Clustering for Big Data Analytics: A MapReduce Implementation of Hierarchical Affinity Propagation”
-• 10-week research experience funded by the National Science Foundation,
-• Constructed robust data mining framework in a cloud-computing environment,
-• Novel MapReduce implementation allowed scalability to Big Data problems,
-• Built using Apache Hadoop, Mahout, and Hive; deployed at scale on Amazon EC2 cloud.
 
 Harmonia Holdings Group, LLC, Tysons Corner, VA
 Java Programming Consultant
@@ -58,18 +72,22 @@ Student-Run Computing and Technology (SRCT), Fairfax, VA
 President and Co-Founder
 August 2013 - Present
 srct.gmu.edu
-• Developed and deployed Open Source projects to benefit the campus community,
-• Organized groups of student developers and their Open Source projects,
+• Managed and deployed Open Source projects to benefit the campus community,
 • Maintained multiple Linux web servers hosting software services,
-• Liaised with campus administration and faculty.
+• Coordinated and led large-scale community outreach events.
 
 
-Relevant Skills
+Publications
+============
+• Rose, D. M., Rouly, J. M., Haber, R., Mijatovic, N., & Peter, A. M. (2013, December). Parallel Hierarchical Affinity Propagation with MapReduce. In Cloud Computing Technology and Science (CloudCom), 2013 IEEE 5th International Conference on (Vol. 2, pp. 13-18). IEEE.
+
+
+Technical Skills
 ===============
 
-Languages: Java, C, Python, MySQL, R, PHP, (X)HTML, CSS
+Languages: Java, C, Python, SQL, R, PHP, (X)HTML, CSS, Javascript, Haskell, MATLAB, LaTeX
 
-Common Applications and Frameworks: Apache Hadoop and Mahout, Django, MATLAB, SVN, Git, Eclipse, NetBeans, LaTex
+Common Applications and Frameworks: Apache Hadoop and Mahout, Django, SVN, Git, Eclipse, NetBeans
 
 Operating Systems: Linux/UNIX; Windows 7, XP, 2000
 
