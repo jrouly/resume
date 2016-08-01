@@ -16,9 +16,12 @@ Education
 B.S., Computer Science
 • George Mason University, Fairfax, VA
 • Aug 2011 - May 2015
-• Cumulative GPA: 3.93
-• Dean's List all semesters attended,
-• Phi Kappa Phi academic honors society member,
+• Cumulative GPA: 3.95
+• Dean's List all semesters attended.
+• Phi Kappa Phi academic honors society member.
+• Honors College Extraordinary Service award recipient.
+• Volgenau School of Engineering Distinguished Academic Achievement Award recipient.
+• Volgenau School of Engineering Excellence in Undergraduate Writing Award recipient.
 • University Scholars scholarship recipient (highest academic merit scholarship).
 
 
@@ -48,9 +51,17 @@ amalthea-reu.org
 Work Experience
 ===================
 
+Rally Health, Washington, D.C.
+Software Engineer
+September 2015 - Present
+• Developed large-scale search engine web application in Scala and Play.
+• Utilized modern reactive and stream technology to serve RESTful web APIs.
+• Served on-call rotations while managing production deploys to millions of consumers.
+• Operated individually and in a team to design and implement solutions to frequently changing requirements.
+
 George Mason University Honors College, Fairfax, VA
 RTOC Production Team Member
-Aug 2013 - Present
+August 2013 - January 2015
 honorscollege.gmu.edu
 • Developed crowd-sourced peer-review service for students pursuing research topics,
 • Maintained multiple Linux web servers hosting online content for student access,
@@ -58,7 +69,7 @@ honorscollege.gmu.edu
 
 Harmonia Holdings Group, LLC, Tysons Corner, VA
 Java Programming Consultant
-June 2012 - Present
+June 2012 - June 2013
 harmonia.com
 • Developed components of a Learning Classifier engine,
 • Collaborated with project manager on high level systems architecture design,
@@ -70,7 +81,7 @@ Community Involvement
 
 Student-Run Computing and Technology (SRCT), Fairfax, VA
 President and Co-Founder
-August 2013 - Present
+August 2013 - May 2014
 srct.gmu.edu
 • Managed and deployed Open Source projects to benefit the campus community,
 • Maintained multiple Linux web servers hosting software services,
@@ -79,16 +90,24 @@ srct.gmu.edu
 
 Publications
 ============
-• Rose, D. M., Rouly, J. M., Haber, R., Mijatovic, N., & Peter, A. M. (2013, December). Parallel Hierarchical Affinity Propagation with MapReduce. In Cloud Computing Technology and Science (CloudCom), 2013 IEEE 5th International Conference on (Vol. 2, pp. 13-18). IEEE.
+• Rouly, J. M., Rangwala, H., and Johri, A. (2015, July). What Are We
+Teaching?: Automated Evaluation of CS Curricula Content Using Topic
+Modeling. In Proceedings of the eleventh annual International
+Conference on International Computing Education Research (pp. 189-197). ACM.
+• Rouly, J.M, Orbeck, J. D., and Syriani, E.
+Usability and Suitability Survey of Features in Visual IDES for
+Non-Programmers. In Proceedings of the 5th Workshop on Evaluation
+and Usability of Programming Languages and Tools, PLATEAU '14, pages
+31–42, New York, NY, USA, 2014. ACM.
+• Rose, D. M., Rouly, J. M., Haber, R., Mijatovic, N., \& Peter, A.
+M. (2013, December). Parallel Hierarchical Affinity Propagation with
+MapReduce. In Cloud Computing Technology and Science (CloudCom),
+2013 IEEE 5th International Conference on (Vol. 2, pp. 13-18). IEEE.
 
 
 Technical Skills
 ===============
-
-Languages: Java, C, Python, SQL, R, PHP, (X)HTML, CSS, Javascript, Haskell, MATLAB, LaTeX
-
-Common Applications and Frameworks: Apache Hadoop and Mahout, Django, SVN, Git, Eclipse, NetBeans
-
-Operating Systems: Linux/UNIX; Windows 7, XP, 2000
-
-Software Design Paradigms: MapReduce, Use Case analysis, UML, technical writing
+Langauges and Tools:
+Scala, Akka, Play, ElasticSearch, Python, C, Java, SQL, Javascript, HTML, CSS, R, PHP, Django, Flask, Git, SVN
+Operating Systems:
+Linux/UNIX, Windows, Mac OSX
