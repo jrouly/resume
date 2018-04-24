@@ -1,19 +1,18 @@
 \documentclass[letterpaper]{article}
 
-\usepackage{xltxtra}          % Use for unicode font support.
-%\usepackage[T1]{fontenc}      % Correct font rendering.
-%\usepackage[utf8]{inputenc}   % Correct font rendering.
-%\usepackage{lmodern}          % Use fancy font.
-%\usepackage[english]{babel}   % This document is in English.
+\usepackage[T1]{fontenc}      % Correct font rendering.
+\usepackage[utf8]{inputenc}   % Correct font rendering.
+\usepackage[english]{babel}   % This document is in English.
+
 \usepackage{tabularx}         % Use tables with spacing.
 \usepackage{hyperref}         % Embed hyperlinks.
 \usepackage{multicol}         % Produce multiple columns.
-\usepackage{fancyhdr}         % Fancify your header
+\usepackage{fancyhdr}         % Fancify your header.
+
 \setlength{\multicolsep}{0pt} % Don't add spacing after contact info.
 
 %% Set custom page margins.
-\usepackage[top=.9in,right=.5in,bottom=.4in,left=.5in]{geometry} %% SHRINK ME
-%\usepackage[top=0.9in,right=.5in,bottom=.4in,left=.5in]{geometry}
+\usepackage[top=.9in,bottom=.4in,right=.5in,left=.5in]{geometry}
 
 %% Slightly decrease section header size.
 \usepackage{sectsty}
@@ -23,12 +22,11 @@
 %% Slightly increase section header spacing.
 \usepackage{titlesec}
 %                      {indentation}{above}{below}
-\titlespacing{\section}{0pt}        {*3}   {*0.5}  %% SHRINK ME
-%\titlespacing{\section}{0pt}        {*2}   {*0.3}
+\titlespacing{\section}{0pt}        {*3}   {*0.5}
 
 %% Decrease spacing between list items.
 \usepackage{enumitem}
-\setlist[itemize]{topsep=0.5em,partopsep=0em,parsep=0em,itemsep=0em}
+\setlist[itemize]{topsep=0.5em,partopsep=0em,parsep=0em,itemsep=0em,leftmargin=0.4cm}
 
 %% Set normal font size; Set no page numbers; Set non-flush page ending
 \normalsize
@@ -44,11 +42,10 @@
 
 % Contact information
 \rhead{
-  \begin{tabularx}{12.5cm}{@{}rrrr@{}}
-  {\fontspec{FontAwesome}} 571 218 7173 &
-  {\fontspec{FontAwesome}} \href{mailto:michel@rouly.net}{michel@rouly.net} &
-  {\fontspec{FontAwesome}} \href{michel.rouly.net}{michel.rouly.net} &
-  {\fontspec{FontAwesome}} \href{http://github.com/jrouly}{github.com/jrouly}
+  \begin{tabularx}{10.1cm}{@{}rrr@{}}
+    e: \href{mailto:michel@rouly.net}{michel@rouly.net} &
+    w: \href{michel.rouly.net}{michel.rouly.net} &
+    gh: \href{http://github.com/jrouly}{github.com/jrouly}
   \end{tabularx}
 }
 
@@ -70,8 +67,8 @@
 
   \noindent
   \begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{Masters of Science in Computer Science} (in progress) & \textbf{Jan 2017 - Dec 2018 (expected)} \\
-    Georgia Institute of Technology, Atlanta, GA & \emph{Cumulative GPA: 4.00}
+    \textbf{Masters of Science in Computer Science} & \textbf{Jan 2017 - Dec 2018} \\
+    \textsc{Georgia Institute of Technology} & \emph{GPA: 4.00}
   \end{tabularx}
 
   \hfill\newline
@@ -79,16 +76,16 @@
   \noindent
   \begin{tabularx}{\textwidth}{@{}X r@{}}
     \textbf{Bachelors of Science in Computer Science} \emph{summa cum laude} & \textbf{Aug 2011 - May 2015} \\
-    George Mason University, Fairfax, VA & \emph{Cumulative GPA: 3.95}
+    \textsc{George Mason University} & \emph{GPA: 3.95}
   \end{tabularx}
 
   \begin{details}
-  \item Dean's List all semesters attended.
+  % \item Dean's List all semesters attended.
   % \item Phi Kappa Phi academic honors society member.
-  \item Honors College Extraordinary Service award recipient.
-  \item Volgenau School of Engineering Distinguished Academic Achievement Award recipient.
-  \item Volgenau School of Engineering Excellence in Undergraduate Writing Award recipient.
-  \item University Scholars scholarship recipient (highest academic merit scholarship).
+  \item Honors College Extraordinary Service Award.
+  \item Volgenau School of Engineering Distinguished Academic Achievement Award.
+  \item Volgenau School of Engineering Excellence in Undergraduate Writing Award.
+  \item University Scholars Scholarship (highest academic merit scholarship).
   \end{details}
 
 %  %% Research
@@ -121,27 +118,28 @@
 
 
   %% Experience
-  \section{Work Experience}
+  \section{Experience}
 
   %% Rally Health
   \noindent
   \begin{tabularx}{\textwidth}{@{}X r@{}}
     \textbf{Senior Software Engineer} & \textbf{Dec 2016 - Present} \\
     \textbf{Software Engineer} & \textbf{Sep 2015 - Dec 2016} \\
-    Rally Health, Washington, D.C. & \texttt{\href{http://rallyhealth.com}{rallyhealth.com}}
+    \textsc{Rally Health} & \texttt{\href{http://rallyhealth.com}{rallyhealth.com}}
   \end{tabularx}
 
   \begin{details}
-  \item Developed large-scale search engine web application in Scala and Play.
-  \item Utilized modern reactive and stream technology to serve RESTful web APIs.
-  \item Served on-call rotations while managing production deploys to millions of consumers.
+  \item Scaled microservice oriented architecture to millions of customers.
+  \item Built tooling and infrastructure to support production site.
+  \item Utilized modern reactive and stream technology.
+  \item Served on-call rotations managing production deploys and live-site support.
   \end{details}
 
   %% GMU RTOC
   \noindent
   \begin{tabularx}{\textwidth}{@{}X r@{}}
     \textbf{Lead Project Developer} & \textbf{Aug 2013 - Jan 2015} \\
-    George Mason University Honors College, Fairfax, VA & \texttt{\href{http://honorscollege.gmu.edu/collegeresearch}{honorscollege.gmu.edu}}
+    \textsc{George Mason University Honors College} & \texttt{\href{http://honorscollege.gmu.edu/collegeresearch}{honorscollege.gmu.edu}}
   \end{tabularx}
 
   \begin{details}
@@ -154,7 +152,7 @@
   \noindent
   \begin{tabularx}{\textwidth}{@{}X r@{}}
     \textbf{Java Programming Consultant} & \textbf{Jun 2012 - Jun 2013} \\
-    Harmonia Holdings Group, LLC, Tysons Corner, VA & \texttt{\href{harmonia.com}{harmonia.com}}
+    \textsc{Harmonia} & \texttt{\href{https://harmonia.com}{harmonia.com}}
   \end{tabularx}
 
   \begin{details}
@@ -179,11 +177,11 @@
 
 
   %% Leadership Experience
-  \section{Leadership Experience}
+  \section{Leadership}
   \noindent
   \begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{President and Co-Founder} & \textbf{August 2013 - May 2014} \\
-    Student-Run Computing and Technology (SRCT), Fairfax, VA & \texttt{\href{srct.gmu.edu}{srct.gmu.edu}}
+    \textbf{President and Co-Founder} & \textbf{Aug 2012 - May 2014} \\
+    \textsc{Student-Run Computing and Technology} & \texttt{\href{https://srct.gmu.edu}{srct.gmu.edu}}
   \end{tabularx}
 
   \begin{details}
@@ -217,24 +215,14 @@
 
   %% Skills
   \section{Technical Skills}
-%  \noindent
-%  \begin{tabularx}{\textwidth}{@{}X r@{}}
-%    \textbf{Languages \& Tools} & \textbf{Operating Systems} \\
-%    Scala, Python, C, Java, SQL, Javascript, HTML, CSS, ElasticSearch, R, PHP, Django, Flask, Git, SVN
-%    &
-%    Linux/UNIX; Windows
-%  \end{tabularx}
 
-    \noindent\textbf{Languages \& Tools} \\
-    Scala, Akka, Play, ElasticSearch, Python, Java, C, SQL, Javascript, HTML, CSS, R, PHP, Django, Flask, Git, SVN \\
-
-    \noindent\textbf{Operating Systems} \\
-    Linux/UNIX, Windows, Mac OSX
-
-
-  %% References
-%  \section{References}
-%  \noindent Available on request.
-
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}lX@{}}
+    \textbf{Languages} & Scala, Java, Javascript, Typescript, SQL, C, Python, HTML, CSS, R, PHP \\
+    \textbf{Frameworks} & Akka, Play, Angular, Django, Flask \\
+    \textbf{Databases} & Elasticsearch, Postgres \\
+    \textbf{Tools} & Bash, Git, Docker, sbt, npm, gpg, svn, Jenkins \\
+    \textbf{OS} & Linux, Mac, Windows
+  \end{tabularx}
 
 \end{document}
