@@ -1,4 +1,4 @@
-\documentclass[letterpaper]{article}
+\documentclass[10pt,letterpaper]{article}
 
 \usepackage[T1]{fontenc}      % Correct font rendering.
 \usepackage[utf8]{inputenc}   % Correct font rendering.
@@ -12,11 +12,11 @@
 \setlength{\multicolsep}{0pt} % Don't add spacing after contact info.
 
 %% Set custom page margins.
-\usepackage[top=1.1in,bottom=.5in,right=.7in,left=.7in]{geometry}
+\usepackage[top=1.5in,bottom=.5in,right=1in,left=1in]{geometry}
 
 %% Slightly decrease section header size.
 \usepackage{sectsty}
-\sectionfont{\large}
+\sectionfont{\Large}
 \subsectionfont{\normalsize}
 
 %% Slightly increase section header spacing.
@@ -26,7 +26,7 @@
 
 %% Decrease spacing between list items.
 \usepackage{enumitem}
-\setlist[itemize]{topsep=0.5em,partopsep=0em,parsep=0em,itemsep=0em,leftmargin=0.4cm}
+\setlist[itemize]{topsep=0.7em,partopsep=0em,parsep=0em,itemsep=0em,leftmargin=0.4cm}
 
 %% Set normal font size; Set no page numbers; Set non-flush page ending
 \normalsize
@@ -49,7 +49,7 @@
   \end{tabularx}
 }
 
-\setlength{\headsep}{0.5cm}
+\setlength{\headsep}{0.7cm}
 
 %% Set up a custom itemize format for entry details
 \newenvironment{details}
@@ -62,169 +62,128 @@
   %% Do not display section numbering
   \setcounter{secnumdepth}{0}
 
+  %% Experience
+  \section{Work}
+
+  %% Rally Health
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Senior Software Engineer} & \textbf{2016 - Present} \\
+    \textbf{Software Engineer} & \textbf{2015 - 2016} \\
+    \textsc{Rally Health} & \texttt{\href{http://rallyhealth.com}{rallyhealth.com}}
+  \end{tabularx}
+  %
+  \hfill\\
+  %
+  \noindent\begin{minipage}[t]{\dimexpr.7\textwidth-.7\columnsep}
+    \raggedright
+    \begin{details}
+    \item Built foundations for greenfield microservice-based application.
+    \item Scaled microservice based architecture to millions of customers.
+    \item Served on-call, managed production deploys and live-site support.
+    \item Architected and optimized multiple ETL pipelines.
+    \item Utilized modern reactive stream technology.
+    \item Mentored and helped junior developers grow.
+    \item Built tooling and common infrastructure.
+    \end{details}
+  \end{minipage}%
+  \begin{minipage}[t]{\dimexpr.32\textwidth-.32\columnsep}
+    \raggedleft
+    \texttt{functional programming} \\
+    \texttt{microservices} \\
+    \texttt{healthcare}
+  \end{minipage}
+
+  \hfill\\
+
+  %% GMU RTOC
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Lead Project Developer} & \textbf{2013 - 2015} \\
+    \textsc{George Mason University} & \texttt{\href{http://honorscollege.gmu.edu/collegeresearch}{honorscollege.gmu.edu}}
+  \end{tabularx}
+  %
+  \hfill\\
+  %
+  \noindent\begin{minipage}[t]{\dimexpr.7\textwidth-.7\columnsep}
+    \raggedright
+    \begin{details}
+    \item Developed peer-review research aid for university students.
+    \item Maintained multiple Linux servers hosting online content.
+    \item Collaborated with research mentors to increase service value.
+    \end{details}
+  \end{minipage}%
+  \begin{minipage}[t]{\dimexpr.32\textwidth-.32\columnsep}
+    \raggedleft
+    \texttt{python} \\
+    \texttt{education} \\
+    \texttt{open source}
+  \end{minipage}
+
+  \hfill\\
+
+  %% Harmonia
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Java Programming Consultant} & \textbf{2012 - 2013} \\
+    \textsc{Harmonia} & \texttt{\href{https://harmonia.com}{harmonia.com}}
+  \end{tabularx}
+  %
+  \hfill\\
+  %
+  \noindent\begin{minipage}[t]{\dimexpr.7\textwidth-.7\columnsep}
+    \raggedright
+    \begin{details}
+    \item Created components of a Learning Classifier engine.
+    \item Collaborated with project manager on systems architecture design.
+    \item Designed and implemented complex graphical user interfaces.
+    \end{details}
+  \end{minipage}%
+  \begin{minipage}[t]{\dimexpr.32\textwidth-.32\columnsep}
+    \raggedleft
+    \texttt{java} \\
+    \texttt{machine learning} \\
+    \texttt{contracting}
+  \end{minipage}
+
+  %% Skills
+  \section{Skills}
+
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}lX@{}}
+    \textbf{Languages} & Scala, Java, Python, Javascript, Typescript, SQL, C, HTML, CSS, R, PHP \\
+    \textbf{Frameworks} & Akka, Play, Angular, Django, Flask \\
+    \textbf{Databases} & Postgres, Elasticsearch \\
+    \textbf{Tools} & Bash, Git, Docker, sbt, npm, gpg, svn, Jenkins \\
+    \textbf{OS} & Linux, Mac, Windows
+  \end{tabularx}
+
   %% Education
   \section{Education}
 
   \noindent
   \begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{Masters of Science in Computer Science} & \textbf{Jan 2017 - Dec 2018} \\
-    \textsc{Georgia Institute of Technology} &
+    \textbf{M.S., Computer Science}, \textsc{Georgia Institute of Technology} & \textbf{2017 - 2018}
   \end{tabularx}
 
   \noindent
   \begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{Bachelors of Science in Computer Science} \emph{summa cum laude} & \textbf{Aug 2011 - May 2015} \\
-    \textsc{George Mason University} &
+    \textbf{B.S., Computer Science}, \textsc{George Mason University}, \emph{summa cum laude} & \textbf{2011 - 2015}
   \end{tabularx}
-
-  % \begin{details}
-  % \item Dean's List all semesters attended.
-  % \item Phi Kappa Phi academic honors society member.
-  % \item Honors College Extraordinary Service Award.
-  % \item Volgenau School of Engineering Distinguished Academic Achievement Award.
-  % \item Volgenau School of Engineering Excellence in Undergraduate Writing Award.
-  % \item University Scholars Scholarship (highest academic merit scholarship).
-  % \end{details}
-
-%  %% Research
-%  \section{Research Experience}
-%
-%  %% UA-ESE-REU
-%  \noindent
-%  \begin{tabularx}{\textwidth}{@{}X r@{}}
-%    \textbf{Undergraduate Researcher} & \textbf{May 2014 - July 2014} \\
-%    University of Alabama, Tuscaloosa, AL & \texttt{\href{reu.cs.ua.edu}{reu.cs.ua.edu}}
-%  \end{tabularx}
-%
-%  \begin{details}
-%  \item Analyzed graphical language IDEs for common attributes.
-%  \item Contributed to Open Source modeling framework AToMPM.
-%  \end{details}
-%
-%  %% AMALTHEA REU
-%  \noindent
-%  \begin{tabularx}{\textwidth}{@{}X r@{}}
-%    \textbf{Undergraduate Researcher} & \textbf{May 2013 - July 2013} \\
-%    Florida Institute of Technology, Melbourne, FL & \texttt{\href{amalthea-reu.org}{amalthea-reu.org}}
-%  \end{tabularx}
-%
-%  \begin{details}
-%  \item Constructed robust data mining framework in a cloud-computing environment.
-%  \item Novel MapReduce implementation allowed scalability to Big Data problems.
-%  \item Built using Apache Hadoop, Mahout, and Hive; deployed at scale on Amazon EC2 cloud.
-%  \end{details}
-
-
-  %% Experience
-  \section{Work Experience}
-
-  %% Rally Health
-  \noindent
-  \begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{Senior Software Engineer} & \textbf{Dec 2016 - Present} \\
-    \textbf{Software Engineer} & \textbf{Sep 2015 - Dec 2016} \\
-    \textsc{Rally Health} & \texttt{\href{http://rallyhealth.com}{rallyhealth.com}}
-  \end{tabularx}
-
-  \begin{details}
-  \item Scaled microservice oriented architecture to millions of customers.
-  \item Built tooling and infrastructure to support production site.
-  \item Utilized modern reactive stream technology.
-  \item Served on-call rotations managing production deploys and live-site support.
-  \end{details}
-  %
-  \hfill\\
-  %
-  %% GMU RTOC
-  \noindent
-  \begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{Lead Project Developer} & \textbf{Aug 2013 - Jan 2015} \\
-    \textsc{George Mason University, Honors College} & \texttt{\href{http://honorscollege.gmu.edu/collegeresearch}{honorscollege.gmu.edu}}
-  \end{tabularx}
-
-  \begin{details}
-  \item Developed crowd-sourced peer-review service for students pursuing research topics.
-  \item Maintained multiple Linux web servers hosting online content for student access.
-  \item Collaborated with research mentors to increase usability and value of services.
-  \end{details}
-  %
-  \hfill\\
-  %
-  %% Harmonia
-  \noindent
-  \begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{Java Programming Consultant} & \textbf{Jun 2012 - Jun 2013} \\
-    \textsc{Harmonia} & \texttt{\href{https://harmonia.com}{harmonia.com}}
-  \end{tabularx}
-
-  \begin{details}
-  \item Created components of a Learning Classifier engine.
-  \item Collaborated with project manager on high level systems architecture design.
-  % \item Spearheaded design and implementation for complex graphical user interfaces, all to-specification.
-  \end{details}
-
-%  %% TIC
-%  \noindent
-%  \begin{tabularx}{\textwidth}{@{}X r@{}}
-%    \textbf{TIC Summer Camp,} McLean, VA & \textbf{June 2011 - August 2011} \\
-%    \emph{Programming Counselor} & \emph{Java, LOGO, Instruction}
-%  \end{tabularx}
-%
-%  \begin{details}
-%  \item Worked closely and autonomously with small groups of students.
-%  \item Instructed students in introductory game design using LOGO.
-%  \item Introduced students to programming in Java.
-%  \item Compiled formal quarterly reports on student progress and behavior.
-%  \end{details}
-
-
-  %% Leadership Experience
-  \section{Leadership}
-  \noindent
-  \begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{President and Co-Founder} & \textbf{Aug 2012 - May 2014} \\
-    \textsc{Student-Run Computing and Technology} & \texttt{\href{https://srct.gmu.edu}{srct.gmu.edu}}
-  \end{tabularx}
-
-  \begin{details}
-  \item Managed and deployed Open Source projects to benefit the campus community.
-  \item Maintained multiple Linux web servers hosting software services.
-  \item Coordinated and led large-scale community outreach events.
-  \end{details}
 
 
   %% Publications
   \section{Publications}
   \noindent
   \begin{details}
-  \item Rouly, J. M., Rangwala, H., and Johri, A. (2015, July). What Are We
-  Teaching?: Automated Evaluation of CS Curricula Content Using Topic
-  Modeling. In \emph{Proceedings of the eleventh annual International
-  Conference on International Computing Education Research} (pp. 189-197). ACM.
+  \item What Are We Teaching?: Automated Evaluation of CS Curricula Content
+  Using Topic Modeling. In \emph{Proceedings of the eleventh annual
+  International Conference on International Computing Education Research}.
 
-  \item Rouly, J.M, Orbeck, J. D., and Syriani, E.
-  Usability and Suitability Survey of Features in Visual IDES for
+  \item Usability and Suitability Survey of Features in Visual IDES for
   Non-Programmers. In \emph{Proceedings of the 5th Workshop on Evaluation
-  and Usability of Programming Languages and Tools, PLATEAU '14}, pages
-  31–42, New York, NY, USA, 2014. ACM.
+  and Usability of Programming Languages and Tools, PLATEAU '14}.
 
-  \item Rose, D. M., Rouly, J. M., Haber, R., Mijatovic, N., \& Peter, A.
-  M. (2013, December). Parallel Hierarchical Affinity Propagation with
-  MapReduce. In \emph{Cloud Computing Technology and Science (CloudCom),
-  2013 IEEE 5th International Conference on} (Vol. 2, pp. 13-18). IEEE.
+  \item Parallel Hierarchical Affinity Propagation with MapReduce. In
+  \emph{2013 IEEE 5th International Conference on Cloud Computing Technology
+  and Science (CloudCom)}.
   \end{details}
-
-
-  %% Skills
-  \section{Technical Skills}
-
-  \noindent
-  \begin{tabularx}{\textwidth}{@{}lX@{}}
-    \textbf{Languages} & Scala, Java, Javascript, Typescript, SQL, C, Python, HTML, CSS, R, PHP \\
-    \textbf{Frameworks} & Akka, Play, Angular, Django, Flask \\
-    \textbf{Databases} & Elasticsearch, Postgres \\
-    \textbf{Tools} & Bash, Git, Docker, sbt, npm, gpg, svn, Jenkins \\
-    \textbf{OS} & Linux, Mac, Windows
-  \end{tabularx}
 
 \end{document}
