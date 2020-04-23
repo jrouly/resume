@@ -28,10 +28,16 @@
 %% Remove page numbers.
 \pagestyle{empty}
 
-%% Set up a custom itemize format for entry details
+%% Set up a custom itemize format for entry details.
 \newenvironment{details}
 {\begin{itemize}}
 {\end{itemize}}
+
+%% Colorize links.
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue
+}
 
 
 \begin{document}
