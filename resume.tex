@@ -1,5 +1,7 @@
 \documentclass[10pt,letterpaper]{article}
 
+\usepackage[default]{sourcecodepro}
+
 \usepackage[T1]{fontenc}      % Correct font rendering.
 \usepackage[utf8]{inputenc}   % Correct font rendering.
 \usepackage[english]{babel}   % This document is in English.
@@ -7,49 +9,24 @@
 \usepackage{tabularx}         % Use tables with spacing.
 \usepackage{hyperref}         % Embed hyperlinks.
 \usepackage{multicol}         % Produce multiple columns.
-\usepackage{fancyhdr}         % Fancify your header.
-
-\setlength{\multicolsep}{0pt} % Don't add spacing after contact info.
 
 %% Set custom page margins.
-\usepackage[top=1.5in,bottom=.5in,right=1in,left=1in]{geometry}
+\usepackage[top=1.5cm,bottom=1.5cm,right=1.5cm,left=1.5cm]{geometry}
 
 %% Slightly decrease section header size.
 \usepackage{sectsty}
 \sectionfont{\Large}
-\subsectionfont{\normalsize}
-
-%% Slightly increase section header spacing.
-\usepackage{titlesec}
-%                      {indentation}{above}{below}
-\titlespacing{\section}{0pt}        {*3}   {*0.5}
+\subsectionfont{\large}
 
 %% Decrease spacing between list items.
 \usepackage{enumitem}
 \setlist[itemize]{topsep=0.7em,partopsep=0em,parsep=0em,itemsep=0em,leftmargin=0.4cm}
 
-%% Set normal font size; Set no page numbers; Set non-flush page ending
-\normalsize
-\pagestyle{fancy}
+%% Set date format.
+\usepackage[yyyymmdd]{datetime}
 
-% Fancy headers
-\setlength{\headheight}{18pt}
-\renewcommand{\headrulewidth}{0.1pt}
-\fancyhf{}
-
-% Name
-\lhead{\Large\textbf{Jean Michel Rouly}}
-
-% Contact information
-\rhead{%
-  \begin{tabularx}{8.6cm}{@{}rrr@{}}
-    \href{mailto:michel@rouly.net}{michel@rouly.net} &
-    \href{michel.rouly.net}{michel.rouly.net} &
-    \href{http://github.com/jrouly}{github.com/jrouly}
-  \end{tabularx}
-}
-
-\setlength{\headsep}{0.7cm}
+%% Remove page numbers.
+\pagestyle{empty}
 
 %% Set up a custom itemize format for entry details
 \newenvironment{details}
@@ -59,137 +36,111 @@
 
 \begin{document}
 
-  %% Do not display section numbering
-  \setcounter{secnumdepth}{0}
+%% Do not display section numbering
+\setcounter{secnumdepth}{0}
 
-  %% Skills
-  \section{Skills}
-
-  \noindent
-  \begin{tabularx}{\textwidth}{@{}lX@{}}
-    \textbf{Languages} & Scala, Java, Python, Javascript, Typescript, SQL, C, HTML, CSS, R, PHP \\
-    \textbf{Frameworks} & Akka, Reactive Streams, Play, Angular, Django, Flask \\
-    \textbf{Databases} & Postgres, Elasticsearch \\
-    \textbf{Tools} & Bash, Git, Docker, AWS, sbt, npm, gpg, svn, Jenkins, Datadog \\
-    \textbf{OS} & Linux, Mac, Windows \\
-    \textbf{etc.} & dependency injection, functional programming, testing, microservices, mentorship
-  \end{tabularx}
-
-  %% Experience
-  \section{Work}
-
-  %% Rally Health
-  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{Principal Software Engineer} & \textbf{2019 - Present} \\
-    \textbf{Senior Software Engineer} & \textbf{2016 - 2019} \\
-    \textbf{Software Engineer} & \textbf{2015 - 2016} \\
-    \textsc{Rally Health} & \texttt{\href{http://rallyhealth.com}{rallyhealth.com}}
-  \end{tabularx}
-  %
-  \hfill\\
-  %
-  \noindent\begin{minipage}[t]{\dimexpr.7\textwidth-.7\columnsep}
-    \raggedright
-    \begin{details}
-    \item Architected and developed greenfield microservice-based application.
-    \item Scaled microservice-based architecture to millions of customers.
-    \item Managed production deploys, served on-call, supported 24/7 live site.
-    \item Designed and optimized multiple ETL pipelines.
-    \item Designed, implemented, and maintained Jenkins CI pipelines.
-    \item Built internal developer tooling and common infrastructure.
-    \item Instrumented performance and monitoring metrics.
-    \item Advocated for secure software development.
-    \item Implemented security engineering goals.
-    \item Mentored junior developers.
-    \end{details}
-  \end{minipage}%
-  \begin{minipage}[t]{\dimexpr.32\textwidth-.32\columnsep}
-    \raggedleft
-    \texttt{scala} \\
-    \texttt{functional programming} \\
-    \texttt{microservices} \\
-    \texttt{healthcare}
-  \end{minipage}
-
-  \hfill\\
-
-  %% GMU RTOC
-  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{Lead Project Developer} & \textbf{2013 - 2015} \\
-    \textsc{George Mason University} & \texttt{\href{http://honorscollege.gmu.edu/collegeresearch}{honorscollege.gmu.edu}}
-  \end{tabularx}
-  %
-  \hfill\\
-  %
-  \noindent\begin{minipage}[t]{\dimexpr.7\textwidth-.7\columnsep}
-    \raggedright
-    \begin{details}
-    \item Developed peer-review research aid for university students.
-    \item Maintained multiple Linux servers hosting online content.
-    \item Collaborated with research mentors to increase service value.
-    \end{details}
-  \end{minipage}%
-  \begin{minipage}[t]{\dimexpr.32\textwidth-.32\columnsep}
-    \raggedleft
-    \texttt{python} \\
-    \texttt{education} \\
-    \texttt{open source}
-  \end{minipage}
-
-  \hfill\\
-
-  %% Harmonia
-  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{Java Programming Consultant} & \textbf{2012 - 2013} \\
-    \textsc{Harmonia} & \texttt{\href{https://harmonia.com}{harmonia.com}}
-  \end{tabularx}
-  %
-  \hfill\\
-  %
-  \noindent\begin{minipage}[t]{\dimexpr.7\textwidth-.7\columnsep}
-    \raggedright
-    \begin{details}
-    \item Created components of a Learning Classifier engine.
-    \item Collaborated with project manager on systems architecture design.
-    \item Designed and implemented complex graphical user interfaces.
-    \end{details}
-  \end{minipage}%
-  \begin{minipage}[t]{\dimexpr.32\textwidth-.32\columnsep}
-    \raggedleft
-    \texttt{java} \\
-    \texttt{machine learning} \\
-    \texttt{contracting}
-  \end{minipage}
-
-  %% Education
-  \section{Education}
-
-  \noindent
-  \begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{M.S., Computer Science}, \textsc{Georgia Institute of Technology} & \textbf{2017 - 2018}
-  \end{tabularx}
-
-  \noindent
-  \begin{tabularx}{\textwidth}{@{}X r@{}}
-    \textbf{B.S., Computer Science}, \textsc{George Mason University}, \emph{summa cum laude} & \textbf{2011 - 2015}
-  \end{tabularx}
+%% Name
+\section{Michel Rouly}
 
 
-  %% Publications
-  \section{Publications}
-  \noindent
-  \begin{details}
-  \item What Are We Teaching?: Automated Evaluation of CS Curricula Content
-  Using Topic Modeling. In \emph{Proceedings of the eleventh annual
-  International Conference on International Computing Education Research}.
+%% Bio
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+  \textbf{location} & Washington, DC \\
+  \textbf{email} & \href{mailto:michel@rouly.net}{michel@rouly.net} \\
+  \textbf{web} & \href{https://michel.rouly.net}{michel.rouly.net} \\
+  \textbf{git} & \href{https://github.com/jrouly}{github.com/jrouly} \\
+  \textbf{gpg} & \href{http://keys.gnupg.net/pks/lookup?op=get\&search=0x68E925EE1DFE3B2C}{0x1DFE3B2C}
+\end{tabularx}
 
-  \item Usability and Suitability Survey of Features in Visual IDES for
-  Non-Programmers. In \emph{Proceedings of the 5th Workshop on Evaluation
-  and Usability of Programming Languages and Tools, PLATEAU '14}.
 
-  \item Parallel Hierarchical Affinity Propagation with MapReduce. In
-  \emph{2013 IEEE 5th International Conference on Cloud Computing Technology
-  and Science (CloudCom)}.
-  \end{details}
+%% Skills
+\subsection{Skills}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+  \textbf{languages} & scala, python, java, javascript, typescript, sql, html, css \\
+  \textbf{libraries} & play, akka (actors, streams), cats, django, flask \\
+  \textbf{data} & postgres, elasticsearch, redis, hdfs \\
+  \textbf{os} & linux, mac, windows \\
+  \textbf{etc} & bash, git, docker, aws, sbt, npm, gpg, svn, jenkins, datadog
+\end{tabularx}
+
+
+%% Experience
+\subsection{Work}
+
+
+%% Rally Health
+\noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \textit{Rally Health} \{scala, functional, microservices, healthcare\} & (\href{https://rallyhealth.com}{rallyhealth.com}) \\
+  \textbf{Principal Software Engineer} & \textbf{2019 - pres} \\
+  \textbf{Senior Software Engineer} & \textbf{2016 - 2019} \\
+  \textbf{Software Engineer} & \textbf{2015 - 2016} \\
+\end{tabularx}
+
+\begin{details}
+\item Architected and developed greenfield microservice-based application.
+\item Scaled microservice-based architecture to millions of customers.
+\item Managed production deploys, served on-call, supported 24/7 live site.
+\item Designed and optimized multiple ETL pipelines.
+\item Designed, implemented, and maintained Jenkins CI pipelines.
+\item Built internal developer tooling and common infrastructure.
+\item Instrumented performance and monitoring metrics.
+\item Advocated for secure software development.
+\item Implemented security engineering goals.
+\item Mentored junior developers.
+\end{details}
+
+\vspace{0.25cm}
+
+%% GMU RTOC
+\noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \textit{George Mason University} \{python, education, open source\} & (\href{https://honorscollege.gmu.edu/collegeresearch}{honorscollege.gmu.edu}) \\
+  \textbf{Lead Project Developer} & \textbf{2013 - 2015}
+\end{tabularx}
+
+\begin{details}
+\item Developed peer-review research aid for university students.
+\item Maintained multiple Linux servers hosting online content.
+\item Collaborated with research mentors to increase service value.
+\end{details}
+
+\vspace{0.25cm}
+
+%% Harmonia
+\noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \textit{Harmonia} \{java, machine learning\} & (\href{https://harmonia.com}{harmonia.com}) \\
+  \textbf{Java Programming Consultant} & \textbf{2012 - 2013}
+\end{tabularx}
+
+\begin{details}
+\item Created components of a Learning Classifier engine.
+\item Collaborated with project manager on systems architecture design.
+\item Designed and implemented complex graphical user interfaces.
+\end{details}
+
+
+%% Education
+\subsection{Education}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \textbf{M.S. Computer Science}, \textsc{Georgia Institute of Technology} & \textbf{2017 - 2018}
+\end{tabularx}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \textbf{B.S. Computer Science}, \textsc{George Mason University}, \emph{summa cum laude} & \textbf{2011 - 2015}
+\end{tabularx}
+
+
+%% Publications
+\subsection{Publications}
+
+\noindent
+\textbf{2015} ACM \ \href{https://doi.org/10.1145/2787622.2787723}{doi.org/10.1145/2787622.2787723} \\
+\textbf{2014} ACM \ \href{https://doi.org/10.1145/2688204.2688207}{doi.org/10.1145/2688204.2688207} \\
+\textbf{2014} IEEE  \href{https://doi.org/10.1109/IC2E.2014.42}{doi.org/10.1109/IC2E.2014.42}
+
 
 \end{document}
