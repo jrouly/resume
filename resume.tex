@@ -1,152 +1,139 @@
 \documentclass[10pt,letterpaper]{article}
 
-\usepackage[default]{sourcecodepro}
+\usepackage[default]{sourcecodepro}  % Set default font to Source Code Pro.
 
-\usepackage[T1]{fontenc}      % Correct font rendering.
-\usepackage[utf8]{inputenc}   % Correct font rendering.
-\usepackage[english]{babel}   % This document is in English.
+\usepackage[T1]{fontenc}     % Set font encoding to T1.
+\usepackage[utf8]{inputenc}  % Set input encoding to UTF-8.
+\usepackage[english]{babel}  % This document is in English.
 
-\usepackage{tabularx}         % Use tables with spacing.
-\usepackage{hyperref}         % Embed hyperlinks.
-\usepackage{multicol}         % Produce multiple columns.
+\usepackage[yyyymmdd]{datetime}  % Set date format.
 
-%% Set custom page margins.
+\usepackage{tabularx}        % Use tables with spacing.
+\usepackage{hyperref}        % Embed hyperlinks.
+\usepackage{multicol}        % Produce multiple columns.
+\usepackage{multirow}        % Produce multiple rows.
+
+% Set custom page margins.
 \usepackage[top=1.5cm,bottom=1.5cm,right=1.5cm,left=1.5cm]{geometry}
 
-%% Slightly decrease section header size.
+% Slightly decrease section header size.
 \usepackage{sectsty}
 \sectionfont{\Large}
 \subsectionfont{\large}
 
-%% Decrease spacing between list items.
+% Decrease spacing between list items.
 \usepackage{enumitem}
 \setlist[itemize]{topsep=0.7em,partopsep=0em,parsep=0em,itemsep=0em,leftmargin=0.4cm}
 
-%% Set date format.
-\usepackage[yyyymmdd]{datetime}
-
-%% Remove page numbers.
+% Remove page numbers.
 \pagestyle{empty}
 
-%% Set up a custom itemize format for entry details.
-\newenvironment{details}
-{\begin{itemize}}
-{\end{itemize}}
-
-%% Colorize links.
+% Colorize links.
 \hypersetup{
   colorlinks=true,
   urlcolor=blue
 }
 
-
 \begin{document}
 
-%% Do not display section numbering
+% Do not display section numbering
 \setcounter{secnumdepth}{0}
 
-%% Name
-\section{Michel Rouly}
-
-
-%% Bio
-\begin{tabularx}{\textwidth}{@{}lX@{}}
-  \textbf{location} & Washington, DC \\
-  \textbf{email} & \href{mailto:michel@rouly.net}{michel@rouly.net} \\
-  \textbf{web} & \href{https://michel.rouly.net}{michel.rouly.net} \\
-  \textbf{git} & \href{https://github.com/jrouly}{github.com/jrouly} \\
-  \textbf{gpg} & \href{http://keys.gnupg.net/pks/lookup?op=get\&search=0x68E925EE1DFE3B2C}{0x1DFE3B2C}
+% Bio
+\noindent
+\begin{tabularx}{\textwidth}{@{} l X lr lX @{}}
+  {\Large\textbf{Michel Rouly}} & &
+      \textbf{email} & \href{mailto:michel@rouly.net}{michel@rouly.net} &
+      \textbf{git} & \href{https://github.com/jrouly}{github.com/jrouly} \\
+  {Washington, DC} & &
+      \textbf{web} & \href{https://michel.rouly.net}{michel.rouly.net} &
+      \textbf{gpg} & \href{http://keys.gnupg.net/pks/lookup?op=get\&search=0x68E925EE1DFE3B2C}{0x1DFE3B2C} \\
 \end{tabularx}
 
-
-%% Skills
+% Skills
 \subsection{Skills}
 
 \noindent
-\begin{tabularx}{\textwidth}{@{}lX@{}}
-  \textbf{languages} & scala, python, java, javascript, typescript, sql, html, css \\
-  \textbf{libraries} & play, akka (actors, streams), cats, django, flask \\
+\begin{tabularx}{\textwidth}{@{} lX @{}}
+  \textbf{languages} & scala, python, java, javascript, typescript, sql \\
+  \textbf{libraries} & play, akka, cats \\
   \textbf{data} & postgres, elasticsearch, redis, hdfs \\
+  \textbf{devops} & docker, kubernetes, terraform, aws (various) \\
   \textbf{os} & linux, mac, windows \\
-  \textbf{etc} & bash, git, docker, aws, sbt, npm, gpg, svn, jenkins, datadog, openAPI
+  \textbf{etc} & bash, git, sbt, npm, gpg, svn, jenkins, datadog, openAPI
 \end{tabularx}
 
-
-%% Experience
+% Experience
 \subsection{Work}
 
-
-%% Rally Health
-\noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+% Rally Health
+\noindent\begin{tabularx}{\textwidth}{@{} Xr @{}}
   \textit{Rally Health} \{scala, functional, microservices, healthcare\} & (\href{https://www.rallyhealth.com}{rallyhealth.com}) \\
   \textbf{Principal Software Engineer} & \textbf{11/2019 - present} \\
   \textbf{Senior Software Engineer} & \textbf{06/2016 - 11/2019} \\
   \textbf{Software Engineer} & \textbf{09/2015 - 06/2016} \\
 \end{tabularx}
 
-\begin{details}
-\item Architected and developed greenfield microservice-based application.
-\item Scaled microservice-based architecture to millions of customers.
-\item Managed production deploys, served on-call, supported 24/7 live site.
-\item Designed and optimized multiple ETL pipelines.
-\item Designed, implemented, and maintained Jenkins CI pipelines.
-\item Built internal developer tooling and common infrastructure.
-\item Instrumented performance and monitoring metrics.
-\item Advocated for secure software development.
-\item Implemented security engineering goals.
-\item Mentored junior developers.
-\end{details}
+\begin{itemize}
+\item Architected and developed greenfield user facing microservice-based applications.
+\item Scaled microservice-based architectures to millions of customers.
+\item Managed production deploys, served on-call rotations, supported 24/7 live site.
+\item Designed and optimized ETL pipelines, accelerating data ingestion velocity and \linebreak increasing data quality standards.
+\item Designed, implemented, and maintained CI pipelines, laying foundations for CD.
+\item Built internal developer tooling and common infrastructure, focusing on automation \linebreak and reducing developer toil.
+\item Instrumented performance and live site monitoring metrics, increasing observability \linebreak and reducing application downtime.
+\item Mentored and leveled up numerous junior developers.
+\item Advocated for secure software development with a focus on user privacy.
+\item Implemented security engineering goals, hardening applications against known and \linebreak anticipated abuse cases.
+\end{itemize}
 
 \vspace{0.25cm}
 
-%% GMU RTOC
-\noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+% GMU RTOC
+\noindent\begin{tabularx}{\textwidth}{@{} Xr @{}}
   \textit{George Mason University} \{python, education, open source\} & (\href{https://honorscollege.gmu.edu}{honorscollege.gmu.edu}) \\
   \textbf{Lead Project Developer} & \textbf{08/2013 - 01/2015}
 \end{tabularx}
 
-\begin{details}
+\begin{itemize}
 \item Developed peer-review research aid for university students.
 \item Maintained multiple Linux servers hosting online content.
 \item Collaborated with research mentors to increase service value.
-\end{details}
+\end{itemize}
 
 \vspace{0.25cm}
 
-%% Harmonia
-\noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+% Harmonia
+\noindent\begin{tabularx}{\textwidth}{@{} Xr @{}}
   \textit{Harmonia} \{java, machine learning\} & (\href{https://harmonia.com}{harmonia.com}) \\
   \textbf{Java Programming Consultant} & \textbf{06/2012 - 06/2013}
 \end{tabularx}
 
-\begin{details}
+\begin{itemize}
 \item Created components of a Learning Classifier engine.
 \item Collaborated with project manager on systems architecture design.
 \item Designed and implemented complex graphical user interfaces.
-\end{details}
+\end{itemize}
 
-
-%% Education
+% Education
 \subsection{Education}
 
 \noindent
-\begin{tabularx}{\textwidth}{@{}X r@{}}
+\begin{tabularx}{\textwidth}{@{} Xr @{}}
   \textbf{M.S. Computer Science}, \textsc{Georgia Institute of Technology} & \textbf{01/2017 - 12/2018}
 \end{tabularx}
 
 \noindent
-\begin{tabularx}{\textwidth}{@{}X r@{}}
+\begin{tabularx}{\textwidth}{@{} Xr @{}}
   \textbf{B.S. Computer Science}, \textsc{George Mason University}, \emph{summa cum laude} & \textbf{08/2011 - 06/2015}
 \end{tabularx}
 
-
-%% Publications
+% Publications
 \subsection{Publications}
 
 \noindent
 \textbf{2015} ACM \ \href{https://doi.org/10.1145/2787622.2787723}{doi.org/10.1145/2787622.2787723} \\
 \textbf{2014} ACM \ \href{https://doi.org/10.1145/2688204.2688207}{doi.org/10.1145/2688204.2688207} \\
 \textbf{2014} IEEE  \href{https://doi.org/10.1109/IC2E.2014.42}{doi.org/10.1109/IC2E.2014.42}
-
 
 \end{document}
