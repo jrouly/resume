@@ -25,8 +25,12 @@
 \usepackage{enumitem}
 \setlist[itemize]{topsep=0.7em,partopsep=0em,parsep=0em,itemsep=0em,leftmargin=0.4cm}
 
-% Remove page numbers.
-\pagestyle{empty}
+% Set page footer.
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyfoot[R]{Updated \today}
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
 
 % Colorize links.
 \hypersetup{
