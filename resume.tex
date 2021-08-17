@@ -14,7 +14,7 @@
 \usepackage{multirow}        % Produce multiple rows.
 
 % Set custom page margins.
-\usepackage[top=1.5cm,bottom=1.5cm,right=1.5cm,left=1.5cm]{geometry}
+\usepackage[top=1.25cm,bottom=1.25cm,right=1.25cm,left=1.25cm]{geometry}
 
 % Slightly decrease section header size.
 \usepackage{sectsty}
@@ -23,7 +23,7 @@
 
 % Decrease spacing between list items.
 \usepackage{enumitem}
-\setlist[itemize]{topsep=0.7em,partopsep=0em,parsep=0em,itemsep=0em,leftmargin=0.4cm}
+\setlist[itemize]{topsep=0.5em,partopsep=0em,parsep=0em,itemsep=0em,leftmargin=0.4cm}
 
 % Set page footer.
 \usepackage{fancyhdr}
@@ -51,7 +51,7 @@
       \textbf{git} & \href{https://github.com/jrouly}{github.com/jrouly} \\
   {Washington, DC} & &
       \textbf{web} & \href{https://michel.rouly.net}{michel.rouly.net} &
-      \textbf{gpg} & \href{http://keys.gnupg.net/pks/lookup?op=get\&search=0x68E925EE1DFE3B2C}{0x1DFE3B2C} \\
+      \textbf{gpg} & \href{https://pgp.mit.edu/pks/lookup?op=get\&search=0x68E925EE1DFE3B2C}{0x1DFE3B2C} \\
 \end{tabularx}
 
 % Skills
@@ -60,35 +60,47 @@
 \noindent
 \begin{tabularx}{\textwidth}{@{} lX @{}}
   \textbf{languages} & scala, python, java, javascript, typescript, sql \\
-  \textbf{libraries} & play, akka (streams, actors), alpakka, cats \\
-  \textbf{data} & postgres, elasticsearch, redis, hdfs \\
-  \textbf{devops} & docker, kubernetes, terraform, aws (various), jenkins, datadog \\
-  \textbf{os} & linux, mac, windows \\
+  \textbf{libraries} & sklearn, pandas, play, akka (streams, actors), alpakka, cats, react \\
+  \textbf{data} & dagster, postgres, elasticsearch, redis, hdfs \\
+  \textbf{devops} & kubernetes, docker, terraform, helm, jenkins, datadog \\
+  \textbf{aws} & IAM, SSO, Cognito, EKS, EC2, RDS, Neptune, S3, Route53, VPC \\
   \textbf{etc} & bash, git, sbt, npm, gpg, svn, openAPI
 \end{tabularx}
 
 % Experience
 \subsection{Work}
 
+% Zephyr AI
+\noindent\begin{tabularx}{\textwidth}{@{} Xr @{}}
+  \textit{Zephyr AI} \{python, machine learning, healthcare\} & \\
+  \textbf{Principal Software Engineer} & \textbf{04/2021 - present} \\
+\end{tabularx}
+
+\begin{itemize}
+\item Designed, deployed, and maintained Kubernetes cluster on AWS EKS with Terraform.
+\item Implemented continuous delivery from source code to production using GitLab pipelines.
+\item Architected and implemented complex data processing graphs with Dagster and Python.
+\end{itemize}
+
+\vspace{0.25cm}
+
+
 % Rally Health
 \noindent\begin{tabularx}{\textwidth}{@{} Xr @{}}
   \textit{Rally Health} \{scala, functional, microservices, healthcare\} & (\href{https://www.rallyhealth.com}{rallyhealth.com}) \\
-  \textbf{Principal Software Engineer} & \textbf{11/2019 - present} \\
+  \textbf{Principal Software Engineer} & \textbf{11/2019 - 04/2021} \\
   \textbf{Senior Software Engineer} & \textbf{06/2016 - 11/2019} \\
   \textbf{Software Engineer} & \textbf{09/2015 - 06/2016} \\
 \end{tabularx}
 
 \begin{itemize}
-\item Architected and developed greenfield user facing microservice-based applications \linebreak in Scala using the Play framework.
-\item Scaled microservice-based architectures to millions of customers.
+\item Architected and developed greenfield user-facing microservice-based applications in Scala \linebreak using the Play framework.
 \item Managed production deploys, served on-call rotations, supported 24/7 live site.
 \item Designed and optimized ETL pipelines using Akka Streams, accelerating data ingestion \linebreak velocity and increasing data quality standards.
-\item Designed, implemented, and maintained Jenkinsfile CI pipelines, preparing for CD.
-\item Built internal developer tooling including sbt plugins, focusing on automation \linebreak and reducing developer toil.
+\item Built internal developer tooling including sbt plugins, focusing on automation.
 \item Instrumented performance and live site monitoring metrics with Datadog, increasing \linebreak observability and reducing application downtime.
+\item Implemented security engineering goals with a focus on user privacy; hardened \linebreak applications against known and anticipated abuse cases.
 \item Mentored and leveled up numerous junior developers.
-\item Advocated for secure software development with a focus on user privacy.
-\item Implemented security engineering goals, hardening applications against known and \linebreak anticipated abuse cases.
 \end{itemize}
 
 \vspace{0.25cm}
